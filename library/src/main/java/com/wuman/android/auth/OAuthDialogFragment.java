@@ -156,6 +156,7 @@ class OAuthDialogFragment extends DialogFragmentCompat {
 
         WebView wv = new WebView(context);
         wv.setId(android.R.id.primary);
+        wv.getSettings().setUserAgentString("Chrome/56.0.0.0 Mobile");
 
         if (mFullScreen) {
             root.addView(wv, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
